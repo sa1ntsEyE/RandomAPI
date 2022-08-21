@@ -10,7 +10,6 @@ function newHuman() {
         .then(response => response.json())
         .then(function (data) {
             const user = data.results[0];
-            console.log(user);
             const imageSrc = `<span class="tooltip" data-title-button="New" onclick="newHuman()"><img id="image" src="${user.picture.large}" alt=""></span>`;
             const text = 'Hi, My name is';
             const name = `${user.name.title} ${user.name.first} ${user.name.last}`;
@@ -45,9 +44,22 @@ function newHuman() {
                     item.className += 'active';
                 })
             });
-        });
+            let prelodaer = document.getElementById('preloader');
+            prelodaer.style.display = 'none';
+        })
+        .catch(err => newHuman() );
+    let prelodaer = document.getElementById('preloader');
+    prelodaer.style.display = 'block';
 }
 newHuman();
+
+
+
+
+
+
+
+
 
 
 
