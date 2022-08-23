@@ -181,16 +181,18 @@ body::before{
 .person {
     background-position: 0 -48px;
     transition: all .3s ease-in-out;
+
 }
-.person:hover{
+.person:hover, .person.active{
     background-position: 0 -96px;
 }
+
 
 .email {
     background-position: -68px -48px;
     transition: all .3s ease-in-out;
 }
-.email:hover{
+.email:hover, .email.active{
     background-position: -68px -96px;
 }
 
@@ -198,7 +200,7 @@ body::before{
     background-position: -136px -48px;
     transition: all .3s ease-in-out;
 }
-.date:hover{
+.date:hover, .date.active{
     background-position: -136px -96px;
 }
 
@@ -206,7 +208,7 @@ body::before{
     background-position: -205px -48px;
     transition: all .3s ease-in-out;
 }
-.location:hover{
+.location:hover, .location.active{
     background-position: -205px -96px;
 }
 
@@ -214,7 +216,7 @@ body::before{
     background-position: -274px -48px;
     transition: all .3s ease-in-out;
 }
-.phone:hover{
+.phone:hover, .phone.active{
     background-position: -274px -96px;
 }
 
@@ -222,20 +224,9 @@ body::before{
     background-position: -338px -48px;
     transition: all .3s ease-in-out;
 }
-.password:hover{
+.password:hover, .password.active{
     background-position: -338px -96px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .info-icons .profile-info .material-icons{
     margin-right: 0.5rem;
@@ -245,10 +236,6 @@ body::before{
 .info-icons .profile-info:hover{
 
 }
-
-
-
-
 
 button{
     margin-top: 2rem;
@@ -264,6 +251,7 @@ button:hover{
     background: linear-gradient(to right, #832de2, #4a00e0);
     color: #fff;
 }
+
 .material-symbols-outlined{
     transition: 0.5s ease;
 }

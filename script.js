@@ -16,12 +16,12 @@ function newHuman() {
             const name = `${user.name.title} ${user.name.first} ${user.name.last}`;
             const content_ = `
 <ul class="values_list">
-    <li class="material-symbols-outlined person active" data-title="Hi, My name is" data-value="${user.name.title} ${user.name.first} ${user.name.last}"></li>
-    <li class="material-symbols-outlined email active" data-title="My email address is" data-value="${user.email}"></li>
-    <li class="material-symbols-outlined date active" data-title="My age is" data-value="${user.dob.age}"></li>
-    <li class="material-symbols-outlined location active" data-title="My address is" data-value="${user.location.country}"></li>
-    <li class="material-symbols-outlined phone active" data-title="My phone number is" data-value="${user.cell}"></li>
-    <li class="material-symbols-outlined password active" data-title="My password is" data-value="${user.login.password}"></li>
+    <li class="material-symbols-outlined person " data-title="Hi, My name is" data-value="${user.name.title} ${user.name.first} ${user.name.last}"></li>
+    <li class="material-symbols-outlined email " data-title="My email address is" data-value="${user.email}"></li>
+    <li class="material-symbols-outlined date " data-title="My age is" data-value="${user.dob.age}"></li>
+    <li class="material-symbols-outlined location " data-title="My address is" data-value="${user.location.country}"></li>
+    <li class="material-symbols-outlined phone " data-title="My phone number is" data-value="${user.cell}"></li>
+    <li class="material-symbols-outlined password " data-title="My password is" data-value="${user.login.password}"></li>
 </ul>`;
 
             info_icons.innerHTML = content_;
