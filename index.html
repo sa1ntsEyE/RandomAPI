@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -12,19 +13,11 @@
     <title>Random User</title>
 </head>
 <body>
-<div id="preloader" class="preloader">
-    <div class="preloader__loader">
-        <div class="loadingio-spinner-ellipsis-55n5auhm04r">
-            <div class="ldio-1xicg6lnolw">
-                <div></div><div></div><div></div><div></div><div></div>
-            </div>
-        </div>
-    </div>
-</div>
+
 <div class="user-profile">
     <div class="profile-top">
         <div class="image">
-            <span class="tooltip" data-title-button="New" onclick="newHuman()"><img src="./assets/wait.gif" alt=""></span>
+            <img src="./assets/wait.gif" alt="">
         </div>
         <div class="profile-info">
             <div class="text-info"></div>
@@ -32,14 +25,36 @@
         </div>
     </div>
     <div class="info-icons">
-        <div class="material-symbols-outlined person active" data-title="Hi, My name is" data-value="Stacey Fuller">account_circle</div>
-        <div class="material-symbols-outlined email active" data-title="My email address is" data-value="stacey.fuller@example.com">mail</div>
-        <div class="material-symbols-outlined date active" data-title="My age is" data-value="7/1/1946">calendar_month</div>
-        <div class="material-symbols-outlined phone active" data-title="My address is" data-value="7723 Adams St">call</div>
-        <div class="material-symbols-outlined location active" data-title="My phone number is" data-value="(445) 625-7605">location_on</div>
-        <div class="material-symbols-outlined password active" data-title="My password is" data-value="beezer">lock</div>
+        <ul class="values_list">
+            <li class="material-symbols-outlined person active" data-title="Hi, My name is" data-value="Stacey Fuller"></li>
+            <li class="material-symbols-outlined email active" data-title="My email address is" data-value="stacey.fuller@example.com"></li>
+            <li class="material-symbols-outlined date active" data-title="My age is" data-value="7/1/1946"></li>
+            <li class="material-symbols-outlined location active" data-title="My address is" data-value="7723 Adams St"></li>
+            <li class="material-symbols-outlined phone active" data-title="My phone number is" data-value="(445) 625-7605"></li>
+            <li class="material-symbols-outlined password active" data-title="My password is" data-value="beezer"></li>
+        </ul>
     </div>
 </div>
+<div>
+    <button class="mdc-button mdc-button--raised" onclick="newHuman()">
+        <span class="mdc-button__ripple"></span>
+        <span class="mdc-button__focus-ring"></span>
+        <span class="mdc-button__label">New</span>
+    </button>
+    <div id="myModal" class="modal">
+
+    </div>
+    <div id="preloader" class="preloader">
+        <div class="preloader__loader">
+            <div class="loadingio-spinner-ellipsis-55n5auhm04r">
+                <div class="ldio-1xicg6lnolw">
+                    <div></div><div></div><div></div><div></div><div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
